@@ -1,0 +1,56 @@
+/*
+*   Styles for Responsive Layout
+*   Treehouse Techdegree certificate
+*   21/2/2017
+*/
+
+
+/*************************
+*******Typography******
+**************************/
+
+body {
+    font-family: 'Roboto', "Helvetica Neue", sans-serif;
+    color:#3e3e3e;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+/*************************
+***** Structural Styles ***
+**************************/
+
+ul li {
+    list-style: none;
+}
+
+a {
+    -webkit-transition: 300ms;
+    -moz-transition: 300ms;
+    -o-transition: 300ms;
+    transition: 300ms;
+    text-decoration: none;
+
+}
+
+
+i:hover, a:hover {
+    outline: none;
+    text-decoration:none;
+}
+
+.container {
+    max-width:1200px;
+    margin:0 auto;
+}
+
+
+/**********************************
+**** Header & Navigation Styles ***
+**********************************/
+
+.logo {
+    font-family:
+}
