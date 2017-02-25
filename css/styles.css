@@ -44,6 +44,7 @@ i:hover, a:hover {
 .container {
     max-width:1200px;
     margin:0 auto;
+    padding:10px;
 }
 
 
@@ -52,5 +53,39 @@ i:hover, a:hover {
 **********************************/
 
 .logo {
-    font-family:
+    font-family: 'Sacramento', cursive;
+    text-align:center;
+    letter-spacing: 0.1rem;
+    margin-bottom:30px;
+}
+
+.nav {
+
+}
+
+.nav ul {
+    padding:0;
+}
+
+.nav ul li {
+    display:block;
+    text-align:center;
+    margin:1.5rem auto;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+
+/*************************
+****  Main Content   *****
+**************************/
+
+.profile > img {
+    margin:0 auto;
+    max-width:70%;
+    display:block;
+}
+
+.profile > p {
+    text-align: center;
 }

@@ -1,0 +1,28 @@
+@media only screen and  (min-width: 480px) {
+
+    .nav ul {
+        text-align: center;
+    }
+
+    .nav ul li {
+        display:inline-block;
+        margin-left: 15px;
+    }
+
+
+
+
+}
+
+
+@media only screen and  (min-width: 768px) {
+    .nav {
+        float: right;
+    }
+}
+
+@media only screen and  (min-width: 1024px) {
+
+}
+
+
