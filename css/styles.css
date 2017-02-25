@@ -57,6 +57,7 @@ i:hover, a:hover {
     text-align:center;
     letter-spacing: 0.1rem;
     margin-bottom:30px;
+    font-size: 1.8rem;
 }
 
 .nav {
@@ -81,11 +82,39 @@ i:hover, a:hover {
 **************************/
 
 .profile > img {
-    margin:0 auto;
+    margin:20px auto;
     max-width:70%;
     display:block;
 }
 
 .profile > p {
     text-align: center;
+}
+
+/*************************
+**** Portfolio Section  **
+**************************/
+
+.portfolio > div > h3 {
+    text-align:center;
+    text-transform: uppercase;
+}
+
+.portfolio-list > img {
+    max-width: 100%;
+
+}
+
+.portfolio-list > p, .portfolio-list > h5 {
+    text-align: center;
+    font-size:1rem;
+    margin-bottom:5px;
+}
+
+.portfolio-list:first-of-type img {
+    margin-top:30px;
+}
+
+.portfolio-list > img {
+    margin-top:30px;
 }
