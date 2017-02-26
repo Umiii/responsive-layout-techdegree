@@ -23,6 +23,18 @@
 
 @media only screen and  (min-width: 1024px) {
 
+
+    /*************************
+    **** Footer Section  **
+    **************************/
+
+    .footer-nav {
+        display:block;
+    }
+
+    .top-link {
+        opacity:0;
+    }
 }
 
 
