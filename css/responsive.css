@@ -10,11 +10,13 @@
     /**********************************
     **** Header & Navigation Styles ***
     **********************************/
-
+    .nav {
+        padding-bottom:20px;
+    }
 
     .nav ul {
         text-align: center;
-        margin:20px 0 auto;
+        margin:24px 0 auto;
     }
 
     .nav ul li {
@@ -102,7 +104,15 @@
 
     .nav {
         float: right;
-        margin-top:15px;
+        margin-top:10px;
+        padding-bottom:0;
+
+    }
+
+    .nav ul li > a:hover {
+        border-bottom:2px solid white;
+        padding-bottom:19px;
+        transition: all .5s;
     }
 
 
@@ -111,7 +121,7 @@
     **************************/
 
     .profile {
-        margin-top:30px;
+        margin-top:50px;
     }
 
     .profile > p {

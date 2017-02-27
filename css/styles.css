@@ -11,7 +11,7 @@
 
 body {
     font-family: 'Roboto', "Helvetica Neue", sans-serif;
-    color:#3e3e3e;
+    color:#413d3d;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -59,17 +59,24 @@ i:hover, a:hover {
 **** Header & Navigation Styles ***
 **********************************/
 
+header {
+    background-color:#240826;
+}
+
 .logo {
     font-family: 'Sacramento', cursive;
     text-align:center;
-    letter-spacing: 0.1rem;
+    letter-spacing: 3px;
     margin-bottom:30px;
-    font-size: 1.8rem;
+    font-size: 2rem;
 }
 
-.nav {
-
+.logo > a {
+    color:#fa023c;
 }
+
+
+
 
 .nav ul {
     padding:0;
@@ -83,10 +90,21 @@ i:hover, a:hover {
     text-transform: uppercase;
 }
 
+.nav ul li > a {
+    color:white;
+}
+
+
+
 
 /*************************
 ****  Main Content   *****
 **************************/
+
+#home {
+    background-color: rgba(217,218,222,0.2);
+    height: 350px;
+}
 
 .profile > img {
     margin:20px auto;
@@ -102,6 +120,9 @@ i:hover, a:hover {
 /*************************
 **** Portfolio Section  **
 **************************/
+
+
+
 
 .footer > div h3, #portfolio > div > h3 {
     text-align:center;
@@ -135,8 +156,20 @@ i:hover, a:hover {
 
 
 /*************************
+**** Skills Section  **
+**************************/
+
+
+
+/*************************
 **** Footer Section  **
 **************************/
+
+#contact {
+    background-color: #150017;
+    color:white;
+}
+
 
 footer {
     margin-top: 2rem;
@@ -176,6 +209,10 @@ footer > div > h4 > i {
     margin-top:0;
 }
 
+.footer-logo > a {
+    color:#fa023c;
+}
+
 .footer-nav {
     float:right;
     display:none;
@@ -191,8 +228,10 @@ footer > div > h4 > i {
     display:inline-block;
 }
 
-.top-link {
+.top-link,.top-link:hover {
     opacity:1;
+    text-decoration: underline;
+    color:white;
 }
 
 .bottom {
