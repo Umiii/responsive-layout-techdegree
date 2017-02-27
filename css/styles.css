@@ -1,6 +1,6 @@
 /*
 *   Styles for Responsive Layout
-*   Treehouse Techdegree certificate
+*   Treehouse Techdegree Certificate
 *   21/2/2017
 */
 
@@ -46,6 +46,13 @@ i:hover, a:hover {
     margin:0 auto;
     padding:10px;
 }
+
+.clearfix::after {
+    content:"";
+    display:table;
+    clear:both;
+}
+
 
 
 /**********************************
@@ -96,10 +103,11 @@ i:hover, a:hover {
 **** Portfolio Section  **
 **************************/
 
-.footer > div h3, .portfolio > div > h3 {
+.footer > div h3, #portfolio > div > h3 {
     text-align:center;
     text-transform: uppercase;
 }
+
 
 .portfolio-list > img {
     max-width: 100%;
@@ -165,6 +173,7 @@ footer > div > h4 > i {
 .footer-logo {
     display:inline-block;
     text-align:left;
+    margin-top:0;
 }
 
 .footer-nav {
@@ -172,8 +181,10 @@ footer > div > h4 > i {
     display:none;
 }
 
+
 .footer-nav ul {
     padding:0;
+    margin-top: 0;
 }
 
 .footer-nav ul li {
@@ -184,7 +195,13 @@ footer > div > h4 > i {
     opacity:1;
 }
 
-#bottom h4 {
+.bottom {
+    padding-top:50px;
+    padding-bottom:30px;
+}
+
+.bottom h4 {
     float:right;
     text-transform: uppercase;
+    margin-top:2px;
 }

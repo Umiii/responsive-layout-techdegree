@@ -1,32 +1,73 @@
+/*
+* Responsive Styles for Responsive Layout Tech degree Project
+* 21/2/2017 - Written by Umeadi Ikem
+*/
+
+
+
 @media only screen and  (min-width: 480px) {
+
+    /**********************************
+    **** Header & Navigation Styles ***
+    **********************************/
+
 
     .nav ul {
         text-align: center;
+        margin:20px 0 auto;
     }
 
     .nav ul li {
         display:inline-block;
-        margin-left: 15px;
+        margin: 0 0 0 15px;
     }
 
-
-
-
-}
-
-
-@media only screen and  (min-width: 768px) {
-    .nav {
-        float: right;
+    .logo {
+        margin-bottom: 0;
     }
-}
 
-@media only screen and  (min-width: 1024px) {
+    /*************************
+    ****  Main Content   *****
+    **************************/
+
+    .profile > img {
+        max-width:40%;
+        display:inline;
+        float:right;
+        margin:0;
+    }
+
+    .profile > p {
+        max-width:55%;
+        padding-top:2px;
+        text-align:left;
+    }
+
+    /*************************
+    **** Portfolio Section  **
+    **************************/
+
+    .portfolio-list {
+        max-width:48%;
+        display: inline-block;
+        margin:0;
+        float:left;
+    }
+
+    .portfolio-list:nth-child(even) {
+        margin-right: 20px;
+    }
 
 
     /*************************
     **** Footer Section  **
     **************************/
+
+    footer > div > p {
+        max-width: 70%;
+        padding-left:18%;
+        margin-top:30px;
+    }
 
     .footer-nav {
         display:block;
@@ -35,6 +76,102 @@
     .top-link {
         opacity:0;
     }
+
+
+    .footer-nav ul li {
+        margin-right: 15px;
+        font-weight:bold;
+        text-transform: uppercase;
+    }
+}
+
+
+
+
+
+@media only screen and  (min-width: 768px) {
+
+    /**********************************
+    **** Header & Navigation Styles ***
+    **********************************/
+
+    .logo {
+        text-align: initial;
+        display: inline-block;
+    }
+
+    .nav {
+        float: right;
+        margin-top:15px;
+    }
+
+
+    /*************************
+    ****  Main Content   *****
+    **************************/
+
+    .profile {
+        margin-top:30px;
+    }
+
+    .profile > p {
+        max-width:65%;
+    }
+
+
+    /*************************
+    **** Portfolio Section  **
+    **************************/
+
+    .portfolio-list:nth-child(even) {
+        margin-right: 10px;
+    }
+
+   .portfolio-list {
+        max-width: 32%;
+        margin:0 12px 0 12px;
+
+    }
+
+   .portfolio-list:first-of-type, #portfolio > div > div:nth-of-type(4n)  {
+       margin-left:0;
+   }
+
+   .portfolio-list:last-of-type, #portfolio > div > div:nth-of-type(3n) {
+       margin-right:0
+   }
+
+
+    /*************************
+   **** Footer Section  **
+   **************************/
+
+    .footer-nav {
+        display:block;
+    }
+
+    .top-link {
+        opacity:0;
+    }
+
+    .footer-logo {
+        margin-top:0;
+    }
+
+    .footer-nav ul {
+        margin-top: 0;
+    }
+
+}
+
+
+
+
+
+@media only screen and  (min-width: 1024px) {
+
+
+
 }
 
 
