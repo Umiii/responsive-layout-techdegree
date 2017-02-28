@@ -32,6 +32,10 @@
     ****  Main Content   *****
     **************************/
 
+    #home {
+        height: 260px;
+    }
+
     .profile > img {
         max-width:40%;
         display:inline;
@@ -58,6 +62,27 @@
 
     .portfolio-list:nth-child(even) {
         margin-right: 20px;
+    }
+
+    /*************************
+     **** Skills Section  ****
+     **************************/
+    .skills-list {
+        padding-bottom:25px;
+        margin-left: 20%;
+    }
+
+    .skills-list li {
+        margin-right:0;
+        margin-top:40px;
+        width:45%;
+    }
+
+
+    .css-logo, .js-logo, .ps-logo, .php-logo, .mysql-logo, .html5-logo {
+        max-width:45%;
+        margin-left:5%;
+        margin-top:5%;
     }
 
 
@@ -111,7 +136,7 @@
 
     .nav ul li > a:hover {
         border-bottom:2px solid white;
-        padding-bottom:19px;
+        padding-bottom:20px;
         transition: all .5s;
     }
 
@@ -153,6 +178,32 @@
 
 
     /*************************
+     **** Skills Section  **
+     **************************/
+
+    #skills {
+        height:300px;
+
+    }
+
+    .skills-list {
+        margin:20px 0;
+        padding:40px 0 0;
+    }
+
+    .skills-list  li {
+        display: inline-block;
+        margin-top:0;
+        margin-right: 60px;
+        width:initial;
+    }
+
+    .css-logo, .js-logo, .ps-logo, .php-logo, .mysql-logo, .html5-logo {
+        max-width:200px;
+        max-height:120px;
+    }
+
+    /*************************
    **** Footer Section  **
    **************************/
 
@@ -161,7 +212,11 @@
     }
 
     .top-link {
-        opacity:0;
+       display:none;
+    }
+
+    .top-link:hover {
+        display:none;
     }
 
     .footer-logo {
