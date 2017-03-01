@@ -33,7 +33,7 @@
     **************************/
 
     #home {
-        height: 260px;
+        height: 280px
     }
 
     .profile > img {
@@ -41,48 +41,49 @@
         display:inline;
         float:right;
         margin:0;
+
     }
 
     .profile > p {
         max-width:55%;
         padding-top:2px;
         text-align:left;
+
     }
 
     /*************************
     **** Portfolio Section  **
     **************************/
-
-    .portfolio-list {
-        max-width:48%;
-        display: inline-block;
-        margin:0;
-        float:left;
+    .portfolio-list > li {
+        margin-right: -4px;
+        max-width: 47%;
     }
 
-    .portfolio-list:nth-child(even) {
-        margin-right: 20px;
+    .portfolio-list > li:nth-child(odd) {
+        padding-left:0;
+    }
+
+    .portfolio-list > li:nth-child(even) {
+        padding-right:0;
     }
 
     /*************************
      **** Skills Section  ****
      **************************/
     .skills-list {
-        padding-bottom:25px;
-        margin-left: 20%;
+
     }
 
     .skills-list li {
-        margin-right:0;
-        margin-top:40px;
-        width:45%;
+        display:inline-block;
+        max-width:45%;
+        padding-left:0;
+        padding-right:0;
     }
 
 
     .css-logo, .js-logo, .ps-logo, .php-logo, .mysql-logo, .html5-logo {
         max-width:45%;
-        margin-left:5%;
-        margin-top:5%;
     }
 
 
@@ -145,6 +146,10 @@
     ****  Main Content   *****
     **************************/
 
+    #home {
+        height: 350px;
+    }
+
     .profile {
         margin-top:50px;
     }
@@ -153,28 +158,45 @@
         max-width:65%;
     }
 
+    .profile > img {
+        max-width:32%;
+        max-height:29%;
+    }
+
 
     /*************************
     **** Portfolio Section  **
     **************************/
 
-    .portfolio-list:nth-child(even) {
-        margin-right: 10px;
+    .portfolio-list > li {
+        max-width: 31%;
+        padding-right:0.8rem;
+        padding-left:0.8rem;
     }
 
-   .portfolio-list {
-        max-width: 32%;
-        margin:0 12px 0 12px;
-
+    .portfolio-list > li:nth-child(odd) {
+        padding-left:0.8rem;
     }
 
-   .portfolio-list:first-of-type, #portfolio > div > div:nth-of-type(4n)  {
-       margin-left:0;
-   }
+    .portfolio-list > li:nth-child(even) {
+        padding-right:0.8rem;
+    }
 
-   .portfolio-list:last-of-type, #portfolio > div > div:nth-of-type(3n) {
-       margin-right:0
-   }
+    .portfolio-list > li:nth-child(4n) {
+        padding-left:0;
+    }
+
+    .portfolio-list > li:nth-child(3n) {
+        padding-right: 0;
+    }
+
+    .portfolio-list > li:last-of-type {
+        padding-right:0;
+    }
+
+    .portfolio-list > li:first-of-type {
+        padding-left:0;
+    }
 
 
     /*************************
@@ -235,7 +257,19 @@
 
 @media only screen and  (min-width: 1024px) {
 
+    .profile > img {
+        max-width:32%;
+        height:200px;
+    }
 
+    /*************************
+   **** Portfolio Section  **
+   **************************/
+
+    .portfolio-list > li {
+        padding-right:0.69rem;
+        padding-left:0.69rem;
+    }
 
 }
 

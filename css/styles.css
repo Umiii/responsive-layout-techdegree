@@ -104,56 +104,63 @@ header {
 
 #home {
     background-color: rgba(217,218,222,0.2);
-    height: 350px;
+    height: 400px;
 }
 
 .profile > img {
     margin:20px auto;
     max-width:70%;
     display:block;
+    padding:0 10px 0 10px;
 }
 
 .profile > p {
     text-align: center;
     max-width: 96%;
+    margin-top:30px;
 }
 
 /*************************
 **** Portfolio Section  **
 **************************/
 
+.portfolio-list {
+    padding: 0;
+    margin-top:3rem;
+}
 
+.portfolio-list > li {
+    display:inline-block;
+    vertical-align:top;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
+.portfolio-list > li > h3 {
+    text-align: center;
+    text-transform:capitalize;
+
+}
+
+.portfolio-list > li > img {
+    max-width:100%;
+
+}
+
+.portfolio-list > li > p {
+    width: 90%;
+    padding-right: 5%;
+    padding-left: 5%;
+    text-align: center;
+    margin-bottom: 3.5rem;
+}
 
 .footer > div h3, #portfolio > div > h3 {
     text-align:center;
     text-transform: uppercase;
+    margin-top: 4rem;
 }
 
-
-.portfolio-list > img {
-    max-width: 100%;
-
-}
-
-.portfolio-list > p {
-    max-width:95%;
-    padding-left: 5px;
-}
-
-.portfolio-list > p, .portfolio-list > h5 {
-    text-align: center;
-    font-size:1rem;
-    margin-bottom:5px;
-}
-
-.portfolio-list:first-of-type img {
-    margin-top:30px;
-}
-
-.portfolio-list > img {
-    margin-top:30px;
-}
 
 
 /*************************
@@ -170,29 +177,38 @@ header {
     text-align: center;
     color:#413d3d;
     text-transform: uppercase;
-    margin-bottom:0;
+    margin-bottom:5rem;
 }
 
 .skills-list {
     padding:0;
-    margin:0;
+    margin:50px 0 0;
+
 }
 
 .skills-list li {
-    display: inline-block;
-    margin-right: 60px;
+    vertical-align:top;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 4.5rem;
 
 }
+
+
 
 .skills-list li:last-child {
     margin-right:0;
 }
 
 .css-logo, .js-logo, .ps-logo, .php-logo, .mysql-logo, .html5-logo {
-    max-width:75%;
-    margin-left:20%;
-    margin-top:25%;
+    max-width: 35%;
+    margin: 0 auto;
+    display: block;
 }
+
+/*.php-logo,.mysql-logo {
+    max-width: 100px;
+}*/
 
 /*************************
 **** Footer Section  **
@@ -211,7 +227,6 @@ footer {
 footer h3 {
     text-align:center;
     text-transform: uppercase;
-    margin-bottom:30px;
     margin-top:45px;
 }
 
@@ -249,6 +264,7 @@ footer > div > h4 > i {
 .footer-nav {
     float:right;
     display:none;
+    padding-top: 4px;
 }
 
 
