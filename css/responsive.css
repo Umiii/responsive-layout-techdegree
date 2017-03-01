@@ -5,19 +5,27 @@
 
 
 
-@media only screen and  (min-width: 480px) {
+@media only screen and  (min-width: 768px) {
 
     /**********************************
     **** Header & Navigation Styles ***
     **********************************/
+
+    .logo {
+        text-align:center;
+        margin-bottom:0;
+    }
+
     .nav {
-        padding-bottom:20px;
+        margin-top:0;
+        padding-bottom:0;
         padding-right: 20px;
+
     }
 
     .nav ul {
         text-align: center;
-        margin:24px 0 auto;
+        margin:15px 0 20px;
     }
 
     .nav ul li {
@@ -25,16 +33,19 @@
         margin: 0 0 0 15px;
     }
 
-    .logo {
-        margin-bottom: 0;
-    }
+
+
 
     /*************************
     ****  Main Content   *****
     **************************/
 
     .profile-content {
-        height: 280px
+        height: 260px;
+    }
+
+    .profile {
+        margin-top:30px;
     }
 
     .profile > img {
@@ -49,124 +60,6 @@
         max-width:55%;
         padding-top:2px;
         text-align:left;
-
-    }
-
-    /*************************
-    **** Portfolio Section  **
-    **************************/
-    .portfolio-list > li {
-        margin-right: -4px;
-        max-width: 49%;
-    }
-
-
-    /*************************
-     **** Skills Section  ****
-     **************************/
-
-
-    .skills-list > li {
-        display:inline-block;
-        max-width:45%;
-        padding-left:0;
-        padding-right:0;
-        margin-right:-4px;
-    }
-
-
-    .css-logo, .js-logo, .ps-logo, .php-logo, .mysql-logo, .html5-logo {
-        max-width:45%;
-    }
-
-    .php-logo,.mysql-logo {
-        padding-left:4%;
-    }
-
-    .mysql-logo {
-        padding-left:9%;
-    }
-
-
-    /*************************
-    **** Footer Section  **
-    **************************/
-
-    footer > div > p {
-        max-width: 70%;
-        display: block;
-        margin:0 auto;
-    }
-
-    .footer-nav {
-        display:block;
-        padding-right:15px;
-    }
-
-    .top-link {
-        opacity:0;
-    }
-
-
-    .footer-nav ul li {
-        margin-right: 15px;
-        font-weight:bold;
-        text-transform: uppercase;
-    }
-
-    .footer-logo {
-        padding-left: 1rem;
-    }
-
-}
-
-
-
-
-
-@media only screen and  (min-width: 768px) {
-
-    /**********************************
-    **** Header & Navigation Styles ***
-    **********************************/
-
-    .logo {
-        text-align:center;
-    }
-
-    .nav {
-        margin-top:0;
-        padding-bottom:0;
-
-    }
-
-    .nav ul {
-        text-align: center;
-        margin:15px 0 20px;
-    }
-
-
-
-
-    /*************************
-    ****  Main Content   *****
-    **************************/
-
-    .profile-content {
-        height: 300px;
-    }
-
-    .profile {
-        margin-top:50px;
-    }
-
-    .profile > p {
-        max-width:65%;
-    }
-
-    .profile > img {
-        max-width:32%;
-        max-height:29%;
     }
 
 
@@ -175,9 +68,10 @@
     **************************/
 
     .portfolio-list > li {
-        max-width: 49%;
+        max-width: 50%;
         padding-right:0.8rem;
         padding-left:0.8rem;
+        margin-right: -4px;
     }
 
 
@@ -185,13 +79,21 @@
      **** Skills Section  **
      **************************/
 
+
+    #skills {
+        height:260px;
+
+    }
+
     .skills-list {
         margin:1rem;
     }
 
-    #skills {
-        height:300px;
-
+    .skills-list > li {
+        display: inline-block;
+        margin-top:0;
+        max-width:14%;
+        margin-right:1rem;
     }
 
     .skills-heading {
@@ -203,12 +105,6 @@
         display:inline;
     }
 
-    .skills-list  li {
-        display: inline-block;
-        margin-top:0;
-        max-width:12%;
-        margin-right:2.2rem;
-    }
 
     .skills-list  li:last-child {
         margin-right:0;
@@ -227,6 +123,12 @@
    **** Footer Section  **
    **************************/
 
+    footer > div > p {
+        max-width: 70%;
+        display: block;
+        margin:0 auto;
+    }
+
     .footer-nav {
         display:block;
     }
@@ -241,6 +143,18 @@
 
     .footer-logo {
         margin-top:0;
+        padding-left:15px;
+    }
+
+    .footer-nav {
+        display:block;
+        padding-right:15px;
+    }
+
+    .footer-nav ul li {
+        margin-right: 15px;
+        font-weight:bold;
+        text-transform: uppercase;
     }
 
     .footer-nav ul {
@@ -286,6 +200,16 @@
     }
 
     /*************************
+    ****  Main Content   *****
+    **************************/
+
+    .profile-content {
+        height: 300px;
+    }
+
+
+
+    /*************************
    **** Portfolio Section  **
    **************************/
 
@@ -299,11 +223,34 @@
      **************************/
 
     .skills-heading {
-        margin-bottom: 2.5rem;
+        margin-bottom: 2.2rem;
+    }
+
+    .skills-list > li {
+        max-width:13%
     }
 
     .skills-list  li {
-        margin-right:3rem;
+        margin-right:2rem;
+        vertical-align: middle;
+    }
+
+}
+
+
+@media only screen and  (min-width: 1200px) {
+
+    /*************************
+     **** Skills Section  **
+     **************************/
+
+    .skills-heading {
+        margin-bottom: 0.5rem;
+    }
+
+
+    .skills-list  li {
+        margin-right:2.7rem;
         vertical-align: middle;
     }
 
