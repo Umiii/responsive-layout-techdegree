@@ -74,6 +74,10 @@
         margin-right: -4px;
     }
 
+    .portfolio-list > li > p {
+        width:100%;
+    }
+
 
     /*************************
      **** Skills Section  **
