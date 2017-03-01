@@ -10,6 +10,10 @@
 *******Typography******
 **************************/
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', "Helvetica Neue", sans-serif;
     color:#413d3d;
@@ -102,7 +106,7 @@ header {
 ****  Main Content   *****
 **************************/
 
-#home {
+.profile-content {
     background-color: rgba(217,218,222,0.2);
     height: 400px;
 }
@@ -206,9 +210,6 @@ header {
     display: block;
 }
 
-/*.php-logo,.mysql-logo {
-    max-width: 100px;
-}*/
 
 /*************************
 **** Footer Section  **
@@ -281,6 +282,7 @@ footer > div > h4 > i {
     display:block;
     text-decoration: underline;
     color:white;
+    padding-right:10px;
 }
 
 .bottom {
