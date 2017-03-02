@@ -4,7 +4,7 @@
 *   21/2/2017
 */
 
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Roboto:400,700|Sacramento');
+
 
 /*************************
 *******Typography******
@@ -276,6 +276,10 @@ footer > div > h4 > i {
 
 .footer-nav ul li {
     display:inline-block;
+}
+
+.footer-nav ul li > a {
+    color:white;
 }
 
 .top-link,.top-link:hover {
